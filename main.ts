@@ -29,4 +29,5 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     radio.sendString("How are you?")
 })
 let mood = false
-radio.setGroup(Math.round(255 / 2))
+led.setBrightness(Math.round(255 / 2))
+radio.setGroup(255)
