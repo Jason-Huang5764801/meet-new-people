@@ -9,6 +9,9 @@ input.onButtonPressed(Button.A, function () {
     basic.showString("How about you?")
     mood_for_bot()
 })
+input.onPinPressed(TouchPin.P2, function () {
+    control.reset()
+})
 control.onEvent(EventBusSource.MICROBIT_ID_ACCELEROMETER, EventBusValue.MICROBIT_ACCELEROMETER_EVT_DATA_UPDATE, function () {
     mood = Math.randomBoolean()
     if (mood == true) {
